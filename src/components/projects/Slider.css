@@ -1,0 +1,171 @@
+.carousel-container {
+    /*min-height: 80vh;*/
+    display: flex;
+    vertical-align: center;
+    align-items: center;
+    background-color: black;
+    padding: 30px 0 30px 0;
+    width: 80%;
+    margin: auto;
+}
+
+.carousel-title {
+    color: white;
+    width: 80%;
+    /*text-align: center;*/
+    font-size: 30px;
+    /*padding: 0 100px 0 100px;*/
+}
+
+.slide-container {
+    height: 700px;
+    width: 800px;
+    /*border-radius: 40px;*/
+    overflow: hidden;
+    /*position: relative;*/
+    cursor: pointer;
+    /*border: 2px solid white;*/
+    /*padding: 20px;*/
+    /*border-radius: 20px;*/
+}
+
+.slide-container > img {
+    /*position: relative;*/
+    width: 500px;
+    height: 800px;
+    /*height: 400px;*/
+    object-fit: contain;
+    border-radius: 20px;
+    /*transition: all 0.2s ease-in-out;*/
+}
+
+.slide-container_img {
+    position: relative;
+}
+
+.slide-container_img img{
+    width: 100%;
+    /*border-radius: 20px;*/
+}
+
+.slide-desc {
+    /*border-radius: 20px;*/
+    /*border: 2px solid white;*/
+    background-color: black;
+    padding: 20px;
+    /*position: absolute;*/
+    /*bottom: 0;*/
+    /*right: 0;*/
+    width: 100%;
+    /*padding: 20px;*/
+    /*border-top-left-radius: 20px;*/
+    opacity: 0.8;
+}
+
+.slide-desc > p,
+.slide-desc > a{
+    color: white;
+    display: block;
+    font-size: 18px;
+    padding-right: 20px;
+}
+
+.BrainhubCarousel{
+    align-items: flex-end;
+}
+
+.BrainhubCarousel__container {
+    width: 100%;
+    overflow: hidden;
+}
+/*.BrainhubCarouselItem {*/
+/*    margin-left: 1px;*/
+/*}*/
+
+.BrainhubCarousel__arrows {
+    background-color: white;
+    /*border-radius: 50%;*/
+    margin: 20px;
+}
+
+.BrainhubCarousel__arrows > span {
+    border-color: black;
+}
+
+.BrainhubCarousel__arrows:hover {
+    background-color: white !important;
+}
+
+.BrainhubCarousel__arrows:hover > span {
+    border-color: black !important;
+}
+
+/*.BrainhubCarouselItem {*/
+/*    margin-left: 1px; !important;*/
+/*}*/
+
+
+@media only screen and (max-width: 960px) {
+    .carousel-container {
+        flex-direction: column;
+    }
+
+    .carousel-title {
+        width: 100%;
+        text-align: center;
+        padding: 50px 0 50px 0;
+    }
+
+    .slide-container {
+        width: 100%;
+    }
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    /*width: auto;*/
+    width: 34px;
+    /*margin-top: -39px;*/
+    color: #ffffff;
+    font-size: 30px;
+    /*padding: 5px;*/
+    z-index: 9999;
+}
+
+.prev:hover, .next:hover {
+    color: #000000;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.next {
+    position: static;
+    /*top: 250px;*/
+    right: 40px;
+    /*border-radius: 3px 0 0 3px;*/
+}
+
+.prev {
+    position: static;
+    /*border-radius: 3px 0 0 3px;*/
+    /*right: -20px;*/
+    left: 40px;
+    /*top: 250px;*/
+}
+
+.btnPrevAndNext{
+    /*padding-top: 28px;*/
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.slide-desc_title{
+    color: white;
+}
+
+.slide-desc_desc{
+    line-height: 1.5;
+}
+

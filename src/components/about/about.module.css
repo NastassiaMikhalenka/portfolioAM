@@ -1,0 +1,164 @@
+.aboutContainer {
+    /*display: flex;*/
+    /*background-color: white;*/
+    /*color: black;*/
+    /*!*height: 60vh;*!*/
+    /*padding: 100px 0 100px 0;*/
+    /*align-items: center;*/
+    /*justify-content: space-evenly;*/
+    /*flex-wrap: wrap;*/
+
+    width: 100%;
+    height: 300px;
+    background-color: white;
+    color: black;
+    /*margin-bottom: 100vh;*/
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+}
+
+.containerSkills{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+@media only screen and (max-width: 960px) {
+    .aboutContainer {
+        height: 200px;
+        width: 100%;
+    }
+
+    .info > h1 {
+        text-align: center;
+        font-size: 25px;
+    }
+}
+
+/*.aboutContainers{*/
+/*    display: flex;*/
+/*    background-color: white;*/
+/*    color: black;*/
+/*    !*padding: 100px 0 100px 0;*!*/
+/*    vertical-align: center;*/
+/*    !* align-items: center; *!*/
+/*    padding: 30px 0 30px 0;*/
+/*    !*width: 80%;*!*/
+/*    margin: auto;*/
+/*}*/
+
+.aboutDesc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 55%;
+    padding: 0 100px 0 100px;
+}
+
+.aboutDesc > h3 {
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+
+.aboutDesc > p {
+    line-height: 1.5;
+}
+
+.aboutImg {
+    width: 45%;
+    display: flex;
+    align-self: center;
+    overflow: hidden;
+}
+
+@media only screen and (max-width: 960px) {
+    .aboutContainer {
+        /*flex-direction: column;*/
+        padding: 0;
+        height: auto;
+    }
+
+    .aboutDesc {
+        width: 90%;
+        margin: 0 auto;
+        padding: 40px 20px 50px 20px;
+    }
+
+    .aboutDesc > h3 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .aboutImg {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .aboutImg > img {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+.skillWrapper {
+    width: 300px;
+    height: 300px;
+    border: 3px solid;
+    display: flex;
+    flex-direction: column;
+    color: #000000;
+    padding: 45px;
+    margin: 10px;
+    transition: .2s linear;
+
+}
+
+.skillWrapper:hover {
+     transform: translateY(-5px);
+     box-shadow: 0 1px 5px rgba(5, 5, 6, 15%);
+ }
+
+.skill {
+    text-align: center;
+    transition: .2s linear;
+}
+
+.skill:hover {
+     transition-delay: .1s;
+     transition: .3s ease;
+     transform: translateY(-5px);
+ }
+
+.icon {
+    /*background-image: url(./src/assets/development.png);*/
+    height: 60px;
+    width: 60px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    margin: 0 auto;
+}
+
+.text {
+    text-transform: uppercase;
+    margin: 25px 0;
+    font-size: 18px;
+}
+
+.description {
+    font-size: 15px;
+}
