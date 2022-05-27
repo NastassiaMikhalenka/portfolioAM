@@ -13,13 +13,11 @@ const Footer = () => {
             <div className={styles.footerInfo}>
                 <h1>Anastasia</h1>
                 <p>Minsk, Belarus</p>
+                    <Form/>
             </div>
             <div className={styles.footerContact}>
                 <h3>Contact me</h3>
                 {/*<p>And let's get down to work</p>*/}
-            </div>
-            <div>
-                <Form/>
             </div>
 
             <div className={styles.footerSns}>

@@ -1,56 +1,21 @@
 import React from 'react'
-import {useFormik} from "formik";
-import axios from "axios";
 
 
 function Form() {
-    const formik = useFormik({
-        initialValues: {
-            name: '',
-            email: '',
-            message: '',
-        },
-        onSubmit: value => {
-            console.log({
-                name: value.name,
-                email: value.email,
-                message: value.message,
-            })
-            formik.resetForm()
-            axios.post("https://frozen-garden-08252.herokuapp.com/sendMessage", {
-                // axios.post("http://localhost:3300/sendMessage", {
-                name: value.name,
-                email: value.email,
-                message: value.message,
-            })
-                .then((res, req) => {
-                    alert(res.data)
-                })
-        }
-    })
-
-
     return (
-        <form onSubmit={formik.handleSubmit}>
+        <form action={"/contact"} name={"contact"} method={"post"}>
+            <input type="hidden" name="form-name" value="contact" />
             <div>
-                <input
-                    type={"text"}
-                    placeholder={"Name"}
-                    {...formik.getFieldProps('name')}
-                />
-                <input
-                    type={"text"}
-                    placeholder={"Email"}
-                    {...formik.getFieldProps('email')}
-                />
+                <input type={"text"} name={"name"} placeholder={"name"}/>
             </div>
-            <textarea
-                placeholder={"Your message"}
-                {...formik.getFieldProps('message')}/>
+            <div>
+                <input type={"text"} name={"email"} placeholder={"email"}/>
+            </div>
+            <div>
+                <textarea placeholder={"message"} name={"message"}/>
+            </div>
+            <button type={"submit"}>Send</button>
 
-            <button type={'submit'}>
-                Send Message
-            </button>
         </form>
     );
 }
