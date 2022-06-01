@@ -1,0 +1,223 @@
+:root {
+    --hex-width: 120px;
+    --hex-between: 10px;
+
+    --hex-height: calc(var(--hex-width) / 1.73 /* sqrt(3) */);
+    --hex-margin: calc(var(--hex-width) / 2);
+    --hex-border: calc(var(--hex-margin) / 1.73 /* sqrt(3) */);
+    --hex-transition: all .2s ease;
+
+    /*!* Colors *!*/
+    --color-hex-default: #000000;
+    --color-hex-hover: #ffffff;
+    --color-javascript: #F7DF1E;
+    --color-typescript: #3178C6;
+    --color-react: #61DAFB;
+    --color-redux: #764ABC;
+    --color-html: #E34F26;
+    --color-css: #1572B6;
+    --color-sass: #CC6699;
+    --color-figma: #F24E1E;
+    --color-photoshop: #31A8FF;
+    --color-postman: #FF6C37;
+    --color-jest: #C21325;
+    --color-git: #F05032;
+    --color-storyBook: #FF4785;
+    --color-materialUI: #007FFF;
+}
+
+@media (max-width: 1200px) {
+    :root {
+        --hex-width: 100px;
+        --hex-between: 10px;
+    }
+}
+
+@media (max-width: 525px) {
+    :root {
+        --hex-width: 60px;
+        --hex-between: 10px;
+    }
+}
+
+.hexagonContainer {
+    display: grid;
+    grid-template-columns: var(--hex-width) var(--hex-width) var(--hex-width) var(--hex-width);
+    grid-auto-rows: calc(var(--hex-width) - 28.87px / 2);
+    grid-gap: var(--hex-between) var(--hex-between);
+    padding-bottom: var(--hex-border);
+    background-color: #ffffff;
+    justify-content: center;
+    margin-left: -30px;
+}
+
+.hexagon {
+    align-items: center;
+    background-color: var(--color-hex-default);
+    cursor: pointer;
+    display: flex;
+    fill: white;
+    height: var(--hex-height);
+    justify-content: center;
+    margin: var(--hex-border) 0;
+    position: relative;
+    transition: var(--hex-transition);
+    width: var(--hex-width);
+}
+
+.hexagon::after,
+.hexagon::before {
+    border-left: var(--hex-margin) solid transparent;
+    border-right: var(--hex-margin) solid transparent;
+    content: "";
+    left: 0;
+    position: absolute;
+    transition: var(--hex-transition);
+    width: 0;
+}
+
+.hexagon::after {
+    border-top: var(--hex-border) solid var(--color-hex-default);
+    top: 100%;
+    width: 0;
+}
+
+.hexagon::before {
+    border-bottom: var(--hex-border) solid var(--color-hex-default);
+    bottom: 100%;
+}
+
+.hexagon:hover {
+    background-color: var(--color-hex-hover);
+}
+
+.hexagon:hover::after,
+.hexagon:hover::before {
+    border-top-color: var(--color-hex-hover);
+    border-bottom-color: var(--color-hex-hover);
+}
+
+.hexagon:nth-child(8n + 5),
+.hexagon:nth-child(8n + 6),
+.hexagon:nth-child(8n + 7),
+.hexagon:nth-child(8n + 8) {
+    margin-left: calc(var(--hex-width) / 2 + var(--hex-between) / 2);
+}
+
+.hexagon > svg {
+    height: 75%;
+    transition: var(--hex-transition);
+}
+
+.backColor {
+    background-color: black;
+}
+
+.backColor::after,
+.backColor::before {
+    border-top-color: black;
+    border-bottom-color: black;
+}
+
+.colorJavascript:hover {
+    fill: var(--color-javascript);
+}
+
+.colorTypescript:hover {
+    fill: var(--color-typescript);
+}
+
+.colorReact:hover {
+    fill: var(--color-react);
+}
+
+.colorRedux:hover {
+    fill: var(--color-redux);
+}
+
+.colorHtml:hover {
+    fill: var(--color-html);
+}
+
+.colorCss:hover {
+    fill: var(--color-css);
+}
+
+.colorSass:hover {
+    fill: var(--color-sass);
+}
+
+.colorFigma:hover {
+    fill: var(--color-figma);
+}
+
+.colorPhotoshop:hover {
+    fill: var(--color-photoshop);
+}
+
+.colorPostman:hover {
+    fill: var(--color-postman);
+}
+
+.colorJest:hover {
+    fill: var(--color-jest);
+}
+
+.colorGit:hover {
+    fill: var(--color-git);
+}
+
+.colorStoryBook:hover {
+    fill: var(--color-storyBook);
+}
+
+.colorMaterialUI:hover {
+    fill: var(--color-materialUI);
+}
+
+
+.skillsBlock {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.containerSkills {
+    width: 70%;
+    margin: 0 auto 30px auto;
+}
+
+.titleSkills {
+    font-size: 30px;
+    padding: 30px 0;
+}
+
+.skillsContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about {
+    max-width: 600px;
+    text-align: center;
+    margin-left: 100px;
+}
+
+.about p {
+    font-size: 22px;
+}
+
+
+@media (max-width: 1100px) {
+    .skillsContainer {
+        flex-direction: column;
+    }
+
+    .hexagonContainer {
+        margin-bottom: 30px;
+    }
+
+    .about {
+        margin-left: 0;
+    }
+}

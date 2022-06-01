@@ -1,12 +1,11 @@
-import React, {useState, useEffect } from "react";
+import React, {useState, useEffect} from "react";
 import './App.css';
-import Cover from "./components/cover/cover";
+import {Cover} from "./components/cover/cover";
 import {Nav} from "./components/nav/nav";
-import About from "./components/about/about";
 import Info from "./components/info/info";
 import Footer from "./components/footer/footer";
-import Slider from "./components/projects/slider";
-import Cv from "./components/cv/cv";
+import {Projects} from "./components/projects/projects";
+import {Skills} from "./components/skills/skills";
 
 function App() {
     const [scrollHeight, setScrollHeight] = useState(0);
@@ -16,27 +15,20 @@ function App() {
         setScrollHeight(position);
     };
 
-    const handleScrollDown = () => {
-        const position = window.pageXOffset;
-        setScrollHeight(position);
-    };
-
     useEffect(() => {
         window.addEventListener("scroll", handleScroll);
-        // window.addEventListener("scroll", handleScrollDown);
     }, [scrollHeight]);
 
-  return (
-      <div>
-          <Nav isScrolling={scrollHeight} />
-          <Cover />
-          <About />
-          <Slider/>
-          <Info />
-          <Footer />
-          {/*<Cv/>*/}
-      </div>
-  );
+    return (
+        <>
+            <Nav isScrolling={scrollHeight}/>
+            <Cover/>
+            <Skills/>
+            <Projects/>
+            <Info/>
+            <Footer/>
+        </>
+    );
 }
 
 export default App;

@@ -15,10 +15,6 @@
     font-size: 100px;
 }
 
-/*img {*/
-/*    width: 300px;*/
-/*}*/
-
 .coverContainer > p {
     margin-top: 8px;
     color: white;
@@ -37,3 +33,15 @@
         width: 85%;
     }
 }
+
+
+@media screen and (max-width: 350px) {
+    .coverContainer > h1 {
+        font-size: 65px;
+    }
+
+    .coverContainer > p {
+        text-align: center;
+    }
+}
+

@@ -1,0 +1,34 @@
+.projectsBlock {
+    min-height: 100vh;
+    background-color: black;
+    color: white;
+}
+
+.projectsBlockDop{
+    background-color: #ffffff;
+    height: 78px;
+}
+
+.containerProjects {
+    width: 70%;
+    margin: 0 auto 30px auto;
+}
+
+.titleProjects {
+    font-size: 30px;
+    padding: 30px 0;
+}
+
+.projects {
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 924px) {
+    .projects {
+        width: 100%;
+        justify-content: center;
+    }
+}

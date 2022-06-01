@@ -1,17 +1,12 @@
 import React, {useState} from "react";
 import styles from './nav.module.css'
-import hamburgerOpen from '../../assets/hamburgerOpen.png'
-import hamburgerClose from '../../assets/hamburgerClose.png'
-import {Link, animateScroll as scroll} from "react-scroll";
+import {Link} from "react-scroll";
 
-
-const arrTitles = ['home', 'skills', 'projects', 'contacts']
 
 export const Nav = ({isScrolling}) => {
     const toTheTop = () => {
         window.scrollTo({top: 0, left: 0, behavior: "smooth"});
     };
-
 
     const toTheBottom = () => {
         window.scrollTo({top: 10000, left: 0, behavior: "smooth"});
@@ -40,7 +35,7 @@ export const Nav = ({isScrolling}) => {
                                 smooth={true}
                                 duration={500}
                             >Projects</Link></li>
-                            <li><Link onClick={toTheBottom}>Contacts</Link></li>
+                            <li><a onClick={toTheBottom}>Contacts</a></li>
                         </ul>
                         <div>
                             <button>View CV</button>
@@ -55,7 +50,6 @@ export const Nav = ({isScrolling}) => {
 
                             :
                             <i className="fa-solid fa-bars" onClick={handlerClick}></i>
-
                     }
                 </div>
             </div>
