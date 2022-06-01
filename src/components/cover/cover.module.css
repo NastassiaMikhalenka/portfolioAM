@@ -1,13 +1,12 @@
 .coverContainer {
     height: 100vh;
     width: 100%;
-    object-fit: contain;
-    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.6);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: black;
+    position: relative;
 }
 
 .coverContainer > h1 {
@@ -35,6 +34,34 @@
 }
 
 
+.snsLinks {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    left: 10px;
+    bottom: 0;
+}
+
+.icon {
+    margin: 20px;
+    padding: 10px;
+    border-left: 4px solid transparent;
+}
+
+.icon i {
+    color: white;
+    font-size: 35px;
+    margin: 0 auto;
+}
+
+.icon:hover {
+    border-color: white;
+    transition: all 0.3s ease-out;
+}
+
+
 @media screen and (max-width: 350px) {
     .coverContainer > h1 {
         font-size: 65px;
@@ -42,6 +69,25 @@
 
     .coverContainer > p {
         text-align: center;
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+
+    .coverContainer {
+        position: initial;
+    }
+
+    .snsLinks {
+        position: initial;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .icon {
+        border-bottom: 4px solid transparent;
+        border-left: none;
     }
 }
 

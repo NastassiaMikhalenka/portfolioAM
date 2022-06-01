@@ -19,16 +19,16 @@ const Footer = () => {
                         <Form/>
                     </div>
                     <div className={styles.snsLinks}>
-                        <a href="https://linkedin.com" target="_blank" rel="noreferrer" className={styles.icon}>
+                        <a href="https://t.me/iamnast" target="_blank" rel="noreferrer" className={styles.icon}>
                             <i className="fa-brands fa-telegram"></i>
                         </a>
-                        <a href="https://twitter.com" target="_blank" rel="noreferrer" className={styles.icon}>
+                        <a href="https://www.linkedin.com/in/nast-mikh/" target="_blank" rel="noreferrer" className={styles.icon}>
                             <i className="fa-brands fa-linkedin"></i>
                         </a>
-                        <a href="https://facebook.com" target="_blank" rel="noreferrer" className={styles.icon}>
-                            <i className="fa-brands fa-github facebook"></i>
+                        <a href="https://github.com/NastassiaMikhalenka" target="_blank" rel="noreferrer" className={styles.icon}>
+                            <i className="fa-brands fa-github"></i>
                         </a>
-                        <a href="https://facebook.com" target="_blank" rel="noreferrer" className={styles.icon}>
+                        <a href="mailto:anastasiyamihalenko@gmail.com" target="_blank" rel="noreferrer" className={styles.icon}>
                             <i className="fa-solid fa-envelope"></i>
                         </a>
                     </div>
