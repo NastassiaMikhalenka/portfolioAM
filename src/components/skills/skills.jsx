@@ -127,6 +127,9 @@ export const Skills = () => {
                             CSS3,
                             Redux, Redux-Thunk, etc. Basic knowledge of Angular, NodeJS, MongoDB, Express.
                             Interested to be part of the project for full-time work.</p>
+                        <p className={styles.education}><b>Education</b></p>
+                        <p><li> • IT-INCUBATOR, 2021 Frontend developer (React, Redux, JS, TS)</li>
+                            <li> • MyItSchool, 2020-2021 Frontend developer (HTML, CSS, JS)</li></p>
                     </div>
                 </div>
             </div>

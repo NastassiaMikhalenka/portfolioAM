@@ -108,9 +108,11 @@
     transition: all .2s cubic-bezier(1, .4, .4, .6);
     position: absolute;
     bottom: -23px;
+    right: 18%;
     width: 50%;
-    left: 25%;
+    /*left: 25%;*/
     text-align: center;
+    display: flex;
 }
 
 .buttons img {
@@ -163,6 +165,11 @@
         font-size: 14px;
     }
 
+
+    .card > .buttons {
+        right: 0;
+        left: 25%;
+    }
 }
 
 
