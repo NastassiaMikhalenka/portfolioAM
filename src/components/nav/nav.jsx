@@ -8,10 +8,6 @@ export const Nav = ({isScrolling}) => {
         window.scrollTo({top: 0, left: 0, behavior: "smooth"});
     };
 
-    const toTheBottom = () => {
-        window.scrollTo({top: 10000, left: 0, behavior: "smooth"});
-    };
-
     const inputClass = isScrolling > 20 ? styles.navbar + ' ' + styles.scrolling : styles.navbar
 
     const [open, setOpen] = useState(false)
@@ -35,7 +31,11 @@ export const Nav = ({isScrolling}) => {
                                 smooth={true}
                                 duration={500}
                             >Projects</Link></li>
-                            <li><a onClick={toTheBottom}>Contacts</a></li>
+                            <li><Link
+                                to={'contacts'}
+                                smooth={true}
+                                duration={500}
+                            >Contacts</Link></li>
                         </ul>
                         <div>
                             <a target="_blank"

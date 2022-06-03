@@ -13,19 +13,12 @@ import quizCards5 from '../../assets/projectsImg/QuizCards/QuizCards5.png';
 import aviasales from '../../assets/projectsImg/aviasales/aviasales.png';
 
 
-export const project1 = {
-    id: 1,
-    title: 'The card game memory',
-    description: `I've created App with the feature of changing level. The object of the game is to turn over pairs of matching cards.`,
-    stack: 'React JS, TypeScript, Module CSS.',
-    image: [
-        {image: `https://github.com/NastassiaMikhalenka/new-year-game/raw/master/src/assets/NewYear2.jpeg`,},
-        {image: `https://github.com/NastassiaMikhalenka/new-year-game/raw/master/src/assets/NewYear1.jpeg`},
-        {image: `https://github.com/NastassiaMikhalenka/new-year-game/raw/master/src/assets/NewYear3.jpeg`,},
-    ],
-    link: 'https://nastassiamikhalenka.github.io/new-year-game/',
-    linkGitHub: 'https://github.com/NastassiaMikhalenka/new-year-game',
-}
+import bite4 from '../../assets/projectsImg/Bite/bite4.jpeg';
+import bite3 from '../../assets/projectsImg/Bite/bite3.jpeg';
+import bite2 from '../../assets/projectsImg/Bite/bite2.jpeg';
+import bite1 from '../../assets/projectsImg/Bite/bite1.jpeg';
+
+
 
 export const project4 = {
     id: 4,
@@ -45,6 +38,38 @@ export const project4 = {
     linkGitHub: 'https://github.com/NastassiaMikhalenka/projectcards',
 }
 
+
+export const project9 = {
+    id: 9,
+    title: 'Learning english for kids',
+    description: `Application for learning English words. Implemented games for learning words that were added to the library (online translation, voiceover of words, verification of voiceover of words).`,
+    stack: 'React, Redux.',
+    image: [
+        {image: englishApp1,},
+        {image: englishApp2,},
+        {image: englishApp3,},
+        {image: englishApp4,},
+    ],
+    link: 'https://nastassiamikhalenka.github.io/learnEnglish/',
+    linkGitHub: 'https://github.com/NastassiaMikhalenka/learnEnglish',
+}
+
+
+export const project1 = {
+    id: 1,
+    title: 'The card game memory',
+    description: `I've created App with the feature of changing level. The object of the game is to turn over pairs of matching cards.`,
+    stack: 'React JS, TypeScript, Module CSS.',
+    image: [
+        {image: `https://github.com/NastassiaMikhalenka/new-year-game/raw/master/src/assets/NewYear2.jpeg`,},
+        {image: `https://github.com/NastassiaMikhalenka/new-year-game/raw/master/src/assets/NewYear1.jpeg`},
+        {image: `https://github.com/NastassiaMikhalenka/new-year-game/raw/master/src/assets/NewYear3.jpeg`,},
+    ],
+    link: 'https://nastassiamikhalenka.github.io/new-year-game/',
+    linkGitHub: 'https://github.com/NastassiaMikhalenka/new-year-game',
+}
+
+
 export const project5 = {
     id: 5,
     title: 'AviaSales',
@@ -60,7 +85,7 @@ export const project5 = {
 export const project7 = {
     id: 7,
     title: 'ToDoList',
-    description: `I've created app which includes allowing u to fetch the list of tasks, also u can edit tasks, and filtering the list of tasks between all, completed, and incomplete tasks.`,
+    description: `I've created app which includes allowing you to fetch the list of tasks, also you can edit tasks, and filtering the list of tasks between all, completed, and incomplete tasks.`,
     stack: 'React JS, TypeScript, Redux, Redux-Thunk, Axios, Material UI.',
     image: [
         {image: todolist1,},
@@ -70,20 +95,24 @@ export const project7 = {
     linkGitHub: 'https://github.com/NastassiaMikhalenka/todolist',
 }
 
-export const project9 = {
-    id: 9,
-    title: 'Learning english fot kids',
-    description: `Implementing UI by using Angular. Fetching data from API using HttpClient and rendering them.`,
-    stack: 'React, Redux',
+
+export const project3 = {
+    id: 3,
+    title: 'Online shop',
+    description: `I've created App 'Shopping store' with the feature of adding items count and decreasing item count.`,
     image: [
-        {image: englishApp1,},
-        {image: englishApp2,},
-        {image: englishApp3,},
-        {image: englishApp4,},
+        {image: bite4,},
+        {image: bite3,},
+        {image: bite1,},
+        {image: bite2,},
+
     ],
-    link: 'https://nastassiamikhalenka.github.io/learnEnglish/',
-    linkGitHub: 'https://github.com/NastassiaMikhalenka/learnEnglish',
+    stack: 'React JS, Redux, Module CSS.',
+    link: 'https://NastassiaMikhalenka.github.io/bite',
+    linkGitHub: 'https://github.com/NastassiaMikhalenka/bite',
 }
+
+
 
 export const project8 = {
     id: 8,
@@ -112,20 +141,6 @@ export const project2 = {
     linkGitHub: 'https://nastassiamikhalenka.github.io/traveland/',
 }
 
-
-export const project3 = {
-    id: 3,
-    title: 'E-commerce Shop',
-    description: `I've created App 'Shopping store' with the feature of adding items count and decreasing item count.`,
-    image: [
-        {image: `https://github.com/NastassiaMikhalenka/new-year-game/raw/master/src/assets/NewYear2.jpeg`,},
-        {image: `https://github.com/NastassiaMikhalenka/new-year-game/raw/master/src/assets/NewYear1.jpeg`},
-        {image: `https://github.com/NastassiaMikhalenka/new-year-game/raw/master/src/assets/NewYear3.jpeg`,},
-    ],
-    stack: 'React JS, Redux, Module CSS.',
-    link: 'https://NastassiaMikhalenka.github.io/bite',
-    linkGitHub: 'https://github.com/NastassiaMikhalenka/bite',
-}
 
 
 export const project6 = {
