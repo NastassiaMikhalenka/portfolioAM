@@ -39,7 +39,7 @@ export const Nav = ({isScrolling}) => {
                         </ul>
                         <div>
                             <a target="_blank"
-                               href={"https://drive.google.com/file/d/11an072D4aW2E81wvOQYu-_9qk-WI9Y0A/view?usp=sharing"}>
+                               href={"https://drive.google.com/file/d/11egMGwNcyk_hwZ_tHrjS6Jihup2wvLQI/view?usp=sharing"}>
                                 <button>View CV</button>
                             </a>
                         </div>

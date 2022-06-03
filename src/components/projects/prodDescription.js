@@ -42,8 +42,8 @@ export const project4 = {
 export const project9 = {
     id: 9,
     title: 'Learning english for kids',
-    description: `Application for learning English words. Implemented games for learning words that were added to the library (online translation, voiceover of words, verification of voiceover of words).`,
-    stack: 'React, Redux.',
+    description: `Application for learning English words. Implemented games for learning words that were added to the library (online translation, speech recognition, and text to speech).`,
+    stack: 'React, Redux, Web Speech API.',
     image: [
         {image: englishApp1,},
         {image: englishApp2,},
