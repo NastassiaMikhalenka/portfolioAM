@@ -38,7 +38,10 @@ export const Nav = ({isScrolling}) => {
                             <li><a onClick={toTheBottom}>Contacts</a></li>
                         </ul>
                         <div>
-                            <button>View CV</button>
+                            <a target="_blank"
+                               href={"https://drive.google.com/file/d/11an072D4aW2E81wvOQYu-_9qk-WI9Y0A/view?usp=sharing"}>
+                                <button>View CV</button>
+                            </a>
                         </div>
                     </nav>
                 </div>

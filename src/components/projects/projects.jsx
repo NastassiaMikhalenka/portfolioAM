@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from './projects.module.css';
+import styles from './projects.module.css';
 import {Project} from "./project/project";
 import {project1, project2, project3, project4, project5, project6, project7, project8, project9} from "./prodDescription";
 
@@ -7,11 +7,11 @@ export const Projects = () => {
 
     return (
         <>
-            <div className={classes.projectsBlockDop} id={'projects'}></div>
-            <section className={classes.projectsBlock}>
-                <div className={classes.containerProjects}>
-                    <h2 className={classes.titleProjects}>Projects</h2>
-                    <div className={classes.projects}>
+            <div className={styles.projectsBlockDop} id={'projects'}></div>
+            <section className={styles.projectsBlock}>
+                <div className={styles.containerProjects}>
+                    <h2 className={styles.titleProjects}>Projects</h2>
+                    <div className={styles.projects}>
                         <Project project={project4}/>
                         <Project project={project9}/>
                         <Project project={project5}/>

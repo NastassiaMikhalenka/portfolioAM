@@ -24,6 +24,8 @@
     --color-git: #F05032;
     --color-storyBook: #FF4785;
     --color-materialUI: #007FFF;
+    --color-nodeJS: #339933;
+    --color-express: #000000;
 }
 
 @media (max-width: 1200px) {
@@ -173,6 +175,14 @@
 
 .colorMaterialUI:hover {
     fill: var(--color-materialUI);
+}
+
+.colorNodeJS:hover{
+    fill: var(--color-nodeJS);
+}
+
+.colorExpress:hover {
+    fill: var(--color-express);
 }
 
 

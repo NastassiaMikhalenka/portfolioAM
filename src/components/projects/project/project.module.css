@@ -107,20 +107,15 @@
 .card > .buttons {
     transition: all .2s cubic-bezier(1, .4, .4, .6);
     position: absolute;
-    bottom: -10px;
+    bottom: -23px;
     width: 50%;
     left: 25%;
     text-align: center;
-    opacity: 0;
-}
-
-.card:hover .buttons {
-    bottom: -25px;
-    opacity: 1;
 }
 
 .buttons img {
-    width: 150px;
+    width: 100px;
+    font-size: 10px;
 }
 
 .card > .buttons > a > img {
@@ -128,7 +123,7 @@
     width: 45px;
     height: 45px;
     display: inline-block;
-    padding: .1em;
+    padding: 2px;
     border-radius: 100%;
     background: #ffffff;
     text-decoration: none;
@@ -138,7 +133,7 @@
 }
 
 .card > .buttons > a > img:hover {
-    color: #c7c7c7;
+    background: #c7c7c7;
 }
 
 @media (max-width: 475px) {
