@@ -18,6 +18,10 @@ import bite3 from '../../assets/projectsImg/Bite/bite3.jpeg';
 import bite2 from '../../assets/projectsImg/Bite/bite2.jpeg';
 import bite1 from '../../assets/projectsImg/Bite/bite1.jpeg';
 
+import chat1 from '../../assets/projectsImg/chat/chat1.png';
+import chat2 from '../../assets/projectsImg/chat/chat2.png';
+
+
 
 
 export const project4 = {
@@ -110,6 +114,20 @@ export const project3 = {
     stack: 'React JS, Redux, Module CSS.',
     link: 'https://NastassiaMikhalenka.github.io/bite',
     linkGitHub: 'https://github.com/NastassiaMikhalenka/bite',
+}
+
+export const project10 = {
+    id: 10,
+    title: 'Quick chat',
+    description: `Application to join the chat room and to broadcast messages to all the users.`,
+    stack: 'Frontend: React JS, module CSS, Web Socket. Backend on heroku :)',
+    image: [
+        {image: chat1},
+        {image: chat2},
+
+    ],
+    link: 'https://nastassiamikhalenka.github.io/chatapp/',
+    linkGitHub: 'https://github.com/NastassiaMikhalenka/chatapp',
 }
 
 
